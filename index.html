@@ -3,56 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Áurea Urban | Diseño y Estilo</title>
+    <title>Áurea Urban | Diseño e Innovación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --gold: #c5a059;
+            --dark: #1a1a1a;
+            --light: #ffffff;
+            --grey: #f4f4f4;
+        }
+
         body {
             margin: 0;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            background-color: var(--light);
+        }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            text-align: center;
+            color: var(--light);
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            letter-spacing: 8px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        /* Secciones */
+        section {
+            padding: 80px 10%;
             text-align: center;
         }
-        .container {
-            max-width: 600px;
-            padding: 20px;
+
+        .about-section {
+            background-color: var(--grey);
         }
-        h1 {
-            font-weight: 300;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            border-bottom: 1px solid #333;
-            padding-bottom: 10px;
-            display: inline-block;
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
         }
-        p {
-            font-style: italic;
-            color: #666;
-            margin-top: 20px;
+
+        .content-text {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #555;
         }
-        .cta {
+
+        /* Contacto */
+        .contact-box {
             margin-top: 40px;
-            padding: 10px 20px;
-            border: 1px solid #333;
-            text-decoration: none;
-            color: #333;
-            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
         }
-        .cta:hover {
-            background-color: #333;
-            color: #fff;
+
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            border: 2px solid var(--dark);
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--dark);
+            color: var(--light);
+        }
+
+        footer {
+            padding: 40px;
+            background: var(--dark);
+            color: var(--light);
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            section { padding: 50px 5%; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+
+    <header>
         <h1>ÁUREA URBAN</h1>
-        <p>Redefiniendo el espacio, elevando el estilo de vida.</p>
-        <br><br>
-        <a href="mailto:hola@aureaurban.com" class="cta">CONTACTO</a>
-    </div>
+        <p class="subtitle">ESTÉTICA · CIUDAD · VIDA</p>
+    </header>
+
+    <section id="info" class="about-section">
+        <h2>Sobre Nosotros</h2>
+        <div class="content-text">
+            <p>En <strong>Áurea Urban</strong> creemos que el entorno define nuestra experiencia diaria. Nos dedicamos a transformar conceptos en realidades tangibles, fusionando el diseño contemporáneo con la funcionalidad que la vida urbana exige.</p>
+            <p>Cada proyecto es una búsqueda de la proporción áurea en el corazón de la ciudad.</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Conectemos</h2>
+        <p>¿Tienes un proyecto en mente o quieres saber más sobre nosotros?</p>
+        <div class="contact-box">
+            <a href="mailto:hola@aureaurban.com" class="btn">ENVIAR EMAIL</a>
+            <p>O búscanos en nuestras redes sociales</p>
+        </div>
+    </section>
+
+    <footer style="text-align: center;">
+        <p>&copy; 2026 ÁUREA URBAN. TODOS LOS DERECHOS RESERVADOS.</p>
+    </footer>
+
 </body>
 </html>
