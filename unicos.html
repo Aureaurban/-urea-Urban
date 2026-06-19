@@ -13,7 +13,7 @@
         nav { background: var(--dark); padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
         nav a { color: var(--light); text-decoration: none; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-left: 20px; transition: color 0.3s; }
         nav a:hover { color: var(--gold); }
-        .logo { font-family: 'Playfair Display', serif; font-size: 1.2rem; letter-spacing: 4px; margin-left: 0 !important; }
+        ..logo { font-family: 'Playfair Display', serif; font-size: 1.2rem; letter-spacing: 5px; color: var(--light) !important; font-weight: 400; margin-left: 0 !important; text-decoration: none; display: flex; align-items: center; }
 
         header.small-hero { height: 40vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1541976844346-f18aeac57b06?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover; display: flex; justify-content: center; align-items: center; color: var(--light); text-align: center; }
         h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; text-transform: uppercase; letter-spacing: 5px; }
@@ -28,7 +28,9 @@
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo">ÁUREA URBAN</a>
+        <a href="index.html" class="logo">
+            <span style="color: var(--gold); font-weight: 700; margin-right: 10px;">A|</span> ÁUREA URBAN
+        </a>
         <div>
             <a href="index.html">Inicio</a>
             <a href="unicos.html" style="color: var(--gold);">Lo que nos hace únicos</a>
